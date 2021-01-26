@@ -14,12 +14,30 @@
       .presidents .roky {background-color: #D7CCC8;}
       .presidents .cr {background-color: #90CAF9;}
       .presidents .sr {background-color: #F8BBD0;}
+      .presidents thead tr th{
+        border-bottom: 4px solid;
+        border-color: black;
+      }
+      .presidents tfoot tr th, .presidents tfoot tr td{
+        border-top: 4px solid;
+        border-color: black;
+      }
+      .presidents{
+        border-collapse: collapse;
+      }
     </style>
   </head>
   <body>
     <table class="presidents">
-      <caption></caption>
-
+      <caption>
+        Seznam Prezidentů ČR a SR od roku 1989
+      </caption>
+      <colgroup>
+        <col span="2" class="roky">
+        <col class="cr">
+        <col class="sr">
+        <col>
+      </colgroup>
       <thead>
         <tr>
           <th>Od</th>
@@ -102,7 +120,7 @@
           <td></td>
         </tr>
       </tbody>
-      <tfoot>
+      <tfoot style="">
         <tr>
           <th colspan="2">Počet</th>
           <td>2+3</td>
